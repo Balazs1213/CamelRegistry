@@ -1,0 +1,75 @@
+# -------------------------------
+# Git ignore for CamelRegistry
+# Covers Visual Studio, VS Code, .NET, Node/Angular, and SQLite
+# -------------------------------
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Build results
+[Bb]in/
+[Oo]bj/
+build/
+artifacts/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+project.assets.json
+project.lock.json
+
+# ASP.NET / IIS
+.vspscc
+*.Publish.xml
+
+# Test results, coverage
+TestResults/
+coverage/
+*.coverage
+*.trx
+
+# Logs
+*.log
+
+# Node / Angular
+node_modules/
+dist/
+build/
+.angular/
+out-tsc/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+Thumbs.db
+.DS_Store
+
+# SQLite - CRITICAL: ignore DB files and journals
+*.db
+*.db-shm
+*.db-wal
+camels.db
+
+# Other
+*.vsix
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
