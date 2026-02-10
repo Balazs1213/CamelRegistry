@@ -1,0 +1,66 @@
+# -------------------------------
+# Git ignore for CamelRegistry
+# Covers: Visual Studio, VS Code, .NET, Angular, SQLite
+# -------------------------------
+
+# --- Visual Studio & IDEs ---
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+*.sln.iml
+
+# --- .NET / C# Backend ---
+[Bb]in/
+[Oo]bj/
+build/
+artifacts/
+packages/
+*.nupkg
+*.snupkg
+project.assets.json
+project.lock.json
+project.nuget.cache
+TestResults/
+coverage/
+*.coverage
+*.trx
+
+# --- ASP.NET Core Specific ---
+appsettings.Development.json
+appsettings.Local.json
+# (Megjegyzés: Az appsettings.json mehet a repóba, ha nincs benne jelszó!)
+
+# --- Angular / Frontend ---
+node_modules/
+dist/
+.angular/
+.sass-cache/
+connect.lock
+coverage/
+lib/
+npm-debug.log
+yarn-error.log
+testem.log
+typing_directory/
+
+# --- SQLite Database (CRITICAL) ---
+# Soha ne töltsd fel az élő adatbázist!
+*.db
+*.db-shm
+*.db-wal
+camels.db
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- Environment Variables ---
+.env
+.env.local
+.env.*.local
